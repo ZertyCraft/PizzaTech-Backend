@@ -1,5 +1,9 @@
 # PizzaTech Backend
 
+> **Academic context**  
+> This project was developed as part of the Master's program **“Manager Opérationnel d'Activité”** at **Ensemble Scolaire Saint Louis** in **Crest (Drôme, France)**.  
+> The repository is public and intended for educational and portfolio purposes.
+
 PizzaTech is a backend service for managing a pizza restaurant. It provides RESTful endpoints for user authentication, pizza catalog management, order processing, and statistics. The service is built in Go using the Gin framework, GORM for PostgreSQL integration, Logrus for logging, and Dig (Uber’s DI) for dependency injection. Configuration is managed through a `.env` file.
 
 ## Table of Contents
@@ -60,6 +64,7 @@ PizzaTech is a backend service for managing a pizza restaurant. It provides REST
 Create a `.env` file in the project root based on the following template:
 
 ```
+
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
@@ -67,6 +72,7 @@ DB_PASSWORD=password
 DB_NAME=pizzadb
 JWT_SECRET=supersecretkey
 SERVER_PORT=8080
+
 ```
 
 - `DB_HOST` – Hostname or IP of the PostgreSQL server.
@@ -82,9 +88,10 @@ SERVER_PORT=8080
 1. Ensure Docker and Docker Compose are installed.
 2. Copy `.env.example` to `.env` and update values if needed.
 3. From the project root, run:
-    ```bash
-    docker-compose up --build
-    ```
+
+   ```bash
+   docker-compose up --build
+   ```
 
 4. The backend will be accessible at `http://localhost:8080`.
 
@@ -96,6 +103,7 @@ SERVER_PORT=8080
    git clone https://github.com/ZertyCraft/PizzaTech-Backend
    cd PizzaTech-Backend
    ```
+
 2. Create a `.env` file (see [Environment Variables](#environment-variables)).
 3. Install dependencies:
 
@@ -115,12 +123,12 @@ SERVER_PORT=8080
 
 ## Project Structure
 
-See [FILE\_STRUCTURE.md](./FILE_STRUCTURE.md) for a detailed breakdown of directories and files.
+See [FILE_STRUCTURE.md](./docs/FILE_STRUCTURE.md) for a detailed breakdown of directories and files.
 
 ## Routing
 
-See [ROUTING.md](./ROUTING.md) for a complete list of endpoints, HTTP methods, path parameters, and required roles.
+See [ROUTING.md](./docs/ROUTING.md) for a complete list of endpoints, HTTP methods, path parameters, and required roles.
 
 ## Configuration
 
-See [CONFIG.md](./CONFIG.md) for details on environment variables, config loading, and customizing settings.
+See [CONFIG.md](./docs/CONFIG.md) for details on environment variables, config loading, and customizing settings.
